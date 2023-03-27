@@ -33,7 +33,7 @@ resource "azurerm_storage_container" "example" {
   container_access_type = "private"
 }
 
-resource "azurerm_resource_group" "example2" {
-  name     = "${var.resource_group_name}-test2"
-  location = var.location
-}
+# resource "azurerm_resource_group" "example2" {
+#   name     = "${var.resource_group_name}-test2"
+#   location = var.location
+# }
