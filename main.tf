@@ -32,3 +32,8 @@ resource "azurerm_storage_container" "example" {
   storage_account_name  = azurerm_storage_account.example.name
   container_access_type = "private"
 }
+
+resource "azurerm_resource_group" "example2" {
+  name     = "${var.resource_group_name}-test2"
+  location = var.location
+}
