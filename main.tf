@@ -1,8 +1,7 @@
 # Terraform Cloud
 terraform {
-  cloud {
+  backend "remote" {
     organization = "MZC-ORG"
-
     workspaces {
       name = "MZC-MTC-swkim-ghdemo"
     }
