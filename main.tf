@@ -1,10 +1,10 @@
 # Terraform Cloud
 terraform {
-  backend "remote" {
-    organization = "MZC-ORG"
-    workspaces {
-      name = "MZC-MTC-swkim-ghdemo"
-    }
+  backend "azurerm" {
+    resource_group_name  = "tf-rg"
+    storage_account_name = "swkimtfstatestg01"
+    container_name       = "terraform"
+    key                  = "devopstest.tfstate"
   }
 }
 
